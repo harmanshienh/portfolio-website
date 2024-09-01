@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProjectDataProps } from '@/data/projects'
-import { extractURLParams } from '@/app/projects/[slug]/page'
+import { extractURLParams } from '@/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
 

@@ -3,7 +3,7 @@ import { ProjectDataProps } from '@/data/projects'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { extractURLParams } from '@/app/projects/[slug]/page'
+import { extractURLParams } from '@/lib/utils'
 
 interface projectImageProps {
   project: ProjectDataProps

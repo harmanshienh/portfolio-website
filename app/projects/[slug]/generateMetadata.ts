@@ -1,5 +1,5 @@
 import { projects } from '@/data/projects';
-import { extractURLParams } from './page';
+import { extractURLParams } from '@/lib/utils';
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   console.log('Slug:', params.slug); // Log the received slug

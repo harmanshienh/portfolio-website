@@ -19,10 +19,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import { SiGithub } from "react-icons/si";
-
-export const extractURLParams = (slug: string) => {
-  return slug.toLowerCase().replaceAll(" ", "-")
-}
+import { extractURLParams } from '@/lib/utils'
 
 export default function page({ params }: { params: { slug: string } }) {
 
