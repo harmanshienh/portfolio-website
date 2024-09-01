@@ -14,7 +14,7 @@ import Image from 'next/image';
 export default function Technologies() {
   return (
     <div className='flex flex-col gap-4'>
-        <h1 className='text-2xl sm:text-4xl font-semibold'>Technologies I&#39;ve worked with:</h1>
+        <h1 className='text-2xl sm:text-4xl font-semibold'>Technologies I&#39;ve used:</h1>
         <div className='flex gap-2 sm:gap-8 select-none'>
             <Image
                 src={FirebaseLogo}
