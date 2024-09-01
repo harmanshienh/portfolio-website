@@ -7,7 +7,7 @@ export default function ProjectsDisplay({ }) {
   return (
     <>
       <h1 className='text-2xl sm:text-4xl font-semibold'>
-        Some projects I've completed:
+        Some projects I&#39;ve completed:
       </h1>
       <div className='flex gap-3 overflow-x-scroll select-none'>
         <Carousel opts={{ align: 'start', loop: true}}>

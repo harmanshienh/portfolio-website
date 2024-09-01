@@ -8,18 +8,18 @@ export default function Intro() {
   return (
     <section className='flex flex-col items-start gap-x-10 gap-y-4 md:flex-row md:items-center'>
       <div className='mt-2 flex-1 md:mt-0'>
-        <h1 className='font-bold text-4xl sm:text-5xl no-underline'>Hi, I'm Harman!</h1>
+        <h1 className='font-bold text-4xl sm:text-5xl no-underline'>Hi, I&#39;m Harman!</h1>
         <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-          I'm an aspiring Software Engineer, currently studying
+          I&#39;m an aspiring Software Engineer, currently studying
           Computer Engineering at the University of Waterloo.
         </p>
         <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-          My interests are in Web/App development and UI/UX design. I'm also
-          currently exploring the field of Embedded Software.
+          My interests are in Web/App development and UI/UX design. I&#39;m also
+          exploring the field of Embedded Software.
         </p>
         <div className="flex w-full flex-col sm:flex-row gap-3">
           <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-            Feel free to reach out! I'm always open to meeting new people and
+            Feel free to reach out! I&#39;m always open to meeting new people and
             exploring different fields!
           </p>
           <div className="flex sm:flex-col gap-4 sm:gap-2 max-sm:items-center mt-3
