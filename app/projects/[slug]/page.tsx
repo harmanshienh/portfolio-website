@@ -22,6 +22,22 @@ import { SiGithub } from "react-icons/si";
 import { extractURLParams } from '@/lib/utils'
 import NotFound from '@/app/not-found'
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const project = projects.find((project) => {
+    const extractedParams = extractURLParams(project.title);
+    return extractedParams === params.slug;
+  });
+
+  if (!project) {
+    return null;
+  }
+
+  return {
+    title: `${project.title} | Harman Shienh`,
+    description: project.summary,
+  };
+}
+
 export default function page({ params }: { params: { slug: string } }) {
 
   const project = projects.find((project) => extractURLParams(project.title) === params.slug)
