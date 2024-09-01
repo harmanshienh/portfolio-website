@@ -10,7 +10,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
     const { company, jobTitle, summary, startDate, endDate, logo } = experience
 
     return (
-        <div className='flex w-full gap-3 items-center'>
+        <div className='flex max-sm:flex-col w-full gap-3 items-center'>
             <div className='flex flex-col'>
                 <div className='flex justify-between'>
                     <div className='flex flex-col gap-1'>

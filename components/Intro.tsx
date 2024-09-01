@@ -42,7 +42,8 @@ export default function Intro() {
               </div>
             </div>
             <div className="group flex gap-2">
-              <Link href="https://www.linkedin.com/in/harman-shienh-1a7aa8281/ min-w-fit">
+              <Link href="https://www.linkedin.com/in/harman-shienh-1a7aa8281/" 
+              target="_blank" className="min-w-fit">
                 <Image
                   src={linkedInLogo}
                   height={0}
@@ -59,7 +60,8 @@ export default function Intro() {
               </div>
             </div>
             <div className="group flex gap-2">
-              <Link href="https://github.com/harmanshienh min-w-fit">
+              <Link href="https://github.com/harmanshienh" 
+              target="_blank" className="min-w-fit">
                 <SiGithub className="w-9 h-auto" />
               </Link>
               <div className="rounded-full border-2 border-primary opacity-0 

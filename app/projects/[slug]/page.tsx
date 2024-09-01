@@ -20,12 +20,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SiGithub } from "react-icons/si";
 import { extractURLParams } from '@/lib/utils'
+import NotFound from '@/app/not-found'
 
 export default function page({ params }: { params: { slug: string } }) {
 
   const project = projects.find((project) => extractURLParams(project.title) === params.slug)
 
   if (!project) {
+    NotFound()
     return;
   }
 
