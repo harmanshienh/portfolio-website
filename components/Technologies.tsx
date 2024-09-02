@@ -10,12 +10,15 @@ import FirebaseLogo from '../public/images/firebase.png'
 import TypeScriptLogo from '../public/images/typescript.png'
 import NextLogo from './NextLogo';
 import Image from 'next/image';
+import Animation from './Animation';
 
 export default function Technologies() {
   return (
     <div className='flex flex-col gap-4'>
         <h1 className='text-2xl sm:text-4xl font-semibold'>Technologies I&#39;ve used:</h1>
         <div className='flex gap-2 sm:gap-8 select-none'>
+          <Animation initialDelay={400} direction='X'>
+            <NextLogo />
             <Image
                 src={FirebaseLogo}
                 width={0}
@@ -39,7 +42,7 @@ export default function Technologies() {
                 className='w-auto h-8 sm:h-14 my-auto'
              />
             <SiTailwindcss className='text-6xl text-sky-400' />
-            <NextLogo />
+          </Animation>
         </div>
     </div>
   )

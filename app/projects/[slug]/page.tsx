@@ -21,6 +21,7 @@ import Link from 'next/link'
 import { SiGithub } from "react-icons/si";
 import { extractURLParams } from '@/lib/utils'
 import NotFound from '@/app/not-found'
+import Animation from '@/components/Animation'
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const project = projects.find((project) => {
@@ -67,6 +68,7 @@ export default function page({ params }: { params: { slug: string } }) {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
+        <Animation>
         <div className='flex flex-wrap items-start justify-between gap-2'>
           <div className='flex flex-wrap items-start gap-2'>
             <div className='flex items-start gap-2'>
@@ -82,14 +84,22 @@ export default function page({ params }: { params: { slug: string } }) {
             {date}
           </span>
         </div>
+        </Animation>
+        <Animation>
         <div className='flex flex-wrap gap-2'>
+          <Animation direction='X'>
           {tags && tags.map((tag, index) => (
             <Badge key={index} variant="destructive" className='text-md'>{tag}</Badge>
           ))}
+          </Animation>
         </div>
+        </Animation>
+        <Animation initialDelay={400}>
         <p className='text-md text-muted-foreground'>
           {description}
         </p>
+        </Animation>
+        <Animation initialDelay={800}>
         <Carousel>
           <CarouselContent>
             {images.map((image, index) => (
@@ -106,6 +116,7 @@ export default function page({ params }: { params: { slug: string } }) {
           <CarouselPrevious className='hidden lg:flex' />
           <CarouselNext className='hidden lg:flex' />
         </Carousel>
+        </Animation>
       </div>
     </section>
   )
