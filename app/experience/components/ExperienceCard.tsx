@@ -14,10 +14,16 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
             <div className='flex flex-col'>
                 <div className='flex justify-between'>
                     <div className='flex flex-col gap-1'>
-                        <span className='font-semibold text-lg sm:text-xl italic'>{jobTitle}</span>
-                        <span className='font-bold text-lg sm:text-xl'>{company}</span>
+                        <span className='font-semibold text-lg sm:text-xl italic text-foreground'>
+                            {jobTitle}
+                        </span>
+                        <span className='font-bold text-lg sm:text-xl text-foreground'>
+                            {company}
+                        </span>
                     </div>
-                    <span className='text-sm sm:text-md'>{startDate} - {endDate}</span>
+                    <span className='text-sm sm:text-md text-foreground'>
+                        {startDate} - {endDate}
+                    </span>
                 </div>
                 <span className='font-medium text-primary'>
                     {summary}

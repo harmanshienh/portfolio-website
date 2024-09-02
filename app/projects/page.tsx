@@ -12,7 +12,7 @@ export default function page() {
   return (
     <section className='py-24'>
         <div className='container max-w-5xl flex flex-col gap-4'>
-            <h1 className='text-3xl font-bold'>Projects</h1>
+            <h1 className='text-3xl font-bold text-foreground'>Projects</h1>
             <Animation>
             {projects && projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />

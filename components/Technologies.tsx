@@ -15,7 +15,9 @@ import Animation from './Animation';
 export default function Technologies() {
   return (
     <div className='flex flex-col gap-4'>
-        <h1 className='text-2xl sm:text-4xl font-semibold'>Technologies I&#39;ve used:</h1>
+        <h1 className='text-2xl sm:text-4xl font-semibold text-foreground'>
+          Technologies I&#39;ve used:
+        </h1>
         <div className='flex gap-2 sm:gap-8 select-none'>
           <Animation initialDelay={400} direction='X'>
             <NextLogo />
@@ -29,7 +31,7 @@ export default function Technologies() {
                 className='w-auto h-8 sm:h-14 my-auto'
              />
             <SiMongodb className='text-6xl text-green-800' />
-            <SiExpress className='text-6xl' />
+            <SiExpress className='text-6xl text-foreground' />
             <SiReact className='text-6xl text-sky-400' />
             <SiNodedotjs className='text-6xl text-green-600' />
             <Image

@@ -72,11 +72,11 @@ export default function page({ params }: { params: { slug: string } }) {
         <div className='flex flex-wrap items-start justify-between gap-2'>
           <div className='flex flex-wrap items-start gap-2'>
             <div className='flex items-start gap-2'>
-              <Link href={link} target='_blank' className='text-3xl hover:cursor-pointer hover:underline'>
+              <Link href={link} target='_blank' className='text-3xl hover:cursor-pointer hover:underline text-foreground'>
                 {title}
               </Link>
               <Link href={repoLink} target='_blank' className='mt-1'>
-                <SiGithub className='text-3xl' />
+                <SiGithub className='text-3xl text-foreground' />
               </Link>
             </div>
           </div>

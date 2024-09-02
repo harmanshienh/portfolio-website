@@ -16,10 +16,10 @@ export default function ProjectCard({ project }: projectCardProps) {
       <Link href={`projects/${websiteProjectURL}`} className='w-full h-32 rounded-lg border-foreground border-1 shadow-sm'>
         <div className='flex h-full hover:bg-popover rounded-lg transition-colors duration-150'>
           <div className='flex flex-col gap-2 p-3 flex-grow'>
-            <span className='text-xl font-bold'>
+            <span className='text-xl font-bold text-foreground'>
               {title}
             </span>
-            <span className='font-medium hidden sm:inline md:text-md'>
+            <span className='font-medium hidden sm:inline md:text-md text-foreground'>
               {summary}
             </span>
           </div>
