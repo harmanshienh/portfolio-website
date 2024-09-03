@@ -80,7 +80,7 @@ export default function page({ params }: { params: { slug: string } }) {
               </Link>
             </div>
           </div>
-          <span className='text-xl'>
+          <span className='text-xl text-foreground'>
             {date}
           </span>
         </div>
