@@ -62,7 +62,7 @@ export default function Intro() {
             <div className="group flex gap-2">
               <Link href="https://github.com/harmanshienh" 
               target="_blank" className="min-w-fit">
-                <SiGithub className="w-9 h-auto" />
+                <SiGithub className="w-9 h-auto text-foreground" />
               </Link>
               <div className="rounded-full border-2 border-primary opacity-0 
               group-hover:opacity-100 transition-opacity duration-300 max-sm:hidden">
