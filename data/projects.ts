@@ -41,7 +41,7 @@ export const projects: ProjectDataProps[] = [
         date: "August 2024",
         link: "https://songifind-345f23dfea60.herokuapp.com/",
         repoLink: "https://github.com/harmanshienh/song-recommendation-algorithm",
-        tags: ["Spotify API", "React", "Typescript", "TailwindCSS", "Figma", "Flask", "REST API", "NumPy", "Pandas", "Scikit-Learn"],
+        tags: ["Spotify API", "Next", "MySQL", "Typescript", "TailwindCSS", "Figma", "Flask", "REST API", "NumPy", "Pandas", "Scikit-Learn"],
         logo: songifindLogo,
         images: [songifind1, songifind2]
     },
