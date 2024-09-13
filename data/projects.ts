@@ -37,7 +37,7 @@ export const projects: ProjectDataProps[] = [
     {
         title: "Songifind",
         summary: "Discover songs you'll love, tailored to your preferences",
-        description: "Songifind allows users to pick from over 100,000 songs stored in a CSV database to find similar songs given what was entered. I used React and TailwindCSS for the frontend, designed using Figma. The database was populated using Pandas alongside Spotify API. Recommendations were made using Pandas for vectorization of song characteristics, NumPy for matrix operations, and Scikit-Learn for feature standardization and clustering. Flask was used to create a REST API, fetching song recommendations from the backend.",
+        description: "Songifind allows users to pick from over 100,000 songs stored in a MySQL database to find similar songs given what was entered. I used Next and TailwindCSS for the frontend, designed using Figma. The database was populated using Pandas alongside Spotify API. Recommendations were made using Pandas for vectorization of song characteristics, NumPy for matrix operations, and Scikit-Learn for feature standardization and clustering. Flask was used to create a REST API, fetching song recommendations from the backend.",
         date: "August 2024",
         link: "https://songifind-345f23dfea60.herokuapp.com/",
         repoLink: "https://github.com/harmanshienh/song-recommendation-algorithm",
