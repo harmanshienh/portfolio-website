@@ -109,7 +109,7 @@ export default function page({ params }: { params: { slug: string } }) {
                   src={image}
                   alt={title}
                   quality={100}
-                  className='rounded-lg w-full h-auto' />
+                  className='mx-auto rounded-lg max-h-96 w-auto' />
               </CarouselItem>
             ))}
           </CarouselContent>

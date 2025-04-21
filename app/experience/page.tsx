@@ -15,7 +15,7 @@ export default function page() {
               <h1 className='text-3xl font-bold text-foreground'>Experience</h1>
               <Animation>
               {experience && experience.map((experience, index) => (
-                  <ExperienceCard key={index} experience={experience} />
+                  <ExperienceCard key={index} experience={experience} index={index} />
               ))}
               </Animation>
           </div>

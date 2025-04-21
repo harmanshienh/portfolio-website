@@ -3,6 +3,8 @@ import songifindLogo from "../public/logos/songifind-logo.jpg"
 import studentHousingLogo from "../public/logos/studenthousing-logo.jpg"
 import xCloneLogo from "../public/logos/xclone-logo.jpg"
 import flappyBirdLogo from "../public/logos/flappybird-logo.jpg"
+import longtailLogo from "../public/logos/longtail-logo.jpg"
+import rcLogo from "../public/logos/rc-logo.jpg"
 
 import songifind1 from "../public/projects/songifind-1.png"
 import songifind2 from "../public/projects/songifind-2.png"
@@ -21,6 +23,18 @@ import flappyBird1 from "../public/projects/flappybird-1.png"
 import flappyBird2 from "../public/projects/flappybird-2.png"
 import flappyBird3 from "../public/projects/flappybird-3.png"
 
+import longtail1 from "../public/projects/longtail-1.png"
+import longtail2 from "../public/projects/longtail-2.png"
+import longtail3 from "../public/projects/longtail-3.jpeg"
+import longtail4 from "../public/projects/longtail-4.jpeg"
+import longtail5 from "../public/projects/longtail-5.jpeg"
+import longtail6 from "../public/projects/longtail-6.jpeg"
+import longtail7 from "../public/projects/longtail-7.jpeg"
+import longtail8 from "../public/projects/longtail-8.jpeg"
+import longtail9 from "../public/projects/longtail-9.jpeg"
+
+import rc1 from "../public/projects/rc-1.png"
+
 export interface ProjectDataProps {
     title: string;
     summary: string;
@@ -34,6 +48,28 @@ export interface ProjectDataProps {
 };
 
 export const projects: ProjectDataProps[] = [
+    {
+        title: "Electric Longtail Conversion Kit",
+        summary: "An E-bike conversion kit with built in Google Maps integration",
+        description: "This innovative conversion kit transforms standard bicycles into an eco-conscious, economical alternative to traditional vehicles. At its core is a 45V battery, engineered with a 12s4p configuration of LiOn cells—that drives both a 2000W BLDC motor alongside an ESP32-S3 microcontroller. The system features an NV3041A display that shows real-time motor telemetry alongside elevation data from an integrated GPS module, sent over CAN and UART respectively. A custom Android application was developed to transmit Google Maps directions to the ESP via BLE, the first bike navigation solution of its kind.",
+        date: "April 2025",
+        link: "https://electriummobility.com/docs/W2025-projects/electric_longtail_conversion_kit_2025",
+        repoLink: "https://github.com/Electrium-Mobility/longtail-conversion-kit",
+        tags: ["FreeRTOS", "C", "Embedded Systems", "CAN Bus", "I2C", "SPI", "UART", "Soldering", "VESC Tool", "ESP-IDF", "BLE", "Kotlin", "CMake"],
+        logo: longtailLogo,
+        images: [longtail1, longtail2, longtail3, longtail4, longtail5, longtail6, longtail7, longtail8, longtail9]
+    },
+    {
+        title: "Custom Remote Control",
+        summary: "A universal remote control for 5+ skateboards/longboards",
+        description: "This remote control smoothly controls the RPM of a given board, up to a max speed of 50 km/h. It uses the ESP-NOW protocol (derived from BLE) between two ESP32-C6 units. Relevant information regarding the battery level of the remote/board, alongside speed and warnings, are shown on an SSD1306 display. ESP32's native sleep modes are used for power conservation, enabling over 12 hours of continuous use on a single charge.",
+        date: "April 2025",
+        link: "https://electriummobility.com/docs/W2025-projects/custom_remote_control_2025",
+        repoLink: "https://github.com/Electrium-Mobility/RC-W25",
+        tags: ["FreeRTOS", "C", "Embedded Systems", "CAN Bus", "I2C", "SPI", "UART", "VESC Tool", "ESP-IDF", "CMake"],
+        logo: rcLogo,
+        images: [rc1]
+    },
     {
         title: "Songifind",
         summary: "Discover songs you'll love, tailored to your preferences",

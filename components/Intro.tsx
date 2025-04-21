@@ -14,8 +14,8 @@ export default function Intro() {
           Computer Engineering at the University of Waterloo.
         </p>
         <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-          My interests are in Web/App development and UI/UX design. I&#39;m also
-          exploring the field of Embedded Software.
+          My interests are in Embedded systems and Firmware. I&#39;ve worked primarily 
+          with serial communication and wireless technologies.
         </p>
         <div className="flex w-full flex-col sm:flex-row gap-3">
           <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
