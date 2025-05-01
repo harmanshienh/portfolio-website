@@ -5,6 +5,7 @@ import xCloneLogo from "../public/logos/xclone-logo.jpg"
 import flappyBirdLogo from "../public/logos/flappybird-logo.jpg"
 import longtailLogo from "../public/logos/longtail-logo.jpg"
 import rcLogo from "../public/logos/rc-logo.jpg"
+import smartMirrorLogo from "../public/logos/smartmirror-logo.jpg"
 
 import songifind1 from "../public/projects/songifind-1.png"
 import songifind2 from "../public/projects/songifind-2.png"
@@ -35,6 +36,9 @@ import longtail9 from "../public/projects/longtail-9.jpeg"
 
 import rc1 from "../public/projects/rc-1.png"
 
+import smartMirror1 from "../public/projects/smartmirror-1.jpeg"
+import smartMirror2 from "../public/projects/smartmirror-2.jpeg"
+
 export interface ProjectDataProps {
     title: string;
     summary: string;
@@ -51,7 +55,7 @@ export const projects: ProjectDataProps[] = [
     {
         title: "Electric Longtail Conversion Kit",
         summary: "An E-bike conversion kit with built in Google Maps integration",
-        description: "This innovative conversion kit transforms standard bicycles into an eco-conscious, economical alternative to traditional vehicles. At its core is a 45V battery, engineered with a 12s4p configuration of LiOn cells—that drives both a 2000W BLDC motor alongside an ESP32-S3 microcontroller. The system features an NV3041A display that shows real-time motor telemetry alongside elevation data from an integrated GPS module, sent over CAN and UART respectively. A custom Android application was developed to transmit Google Maps directions to the ESP via BLE, the first bike navigation solution of its kind.",
+        description: "This conversion kit transforms standard bicycles into e-bikes. At its core is a 45V battery, engineered with a 12s4p configuration of LiOn cells that drives both a 2000W BLDC motor alongside an ESP32-S3 microcontroller. The system features an NV3041A display that shows real-time motor telemetry alongside elevation data from an integrated GPS module, sent over CAN and UART respectively. We also developed a custom Android app to transmit Google Maps directions to the ESP via BLE, the first bike navigation solution of its kind.",
         date: "April 2025",
         link: "https://electriummobility.com/docs/W2025-projects/electric_longtail_conversion_kit_2025",
         repoLink: "https://github.com/Electrium-Mobility/longtail-conversion-kit",
@@ -69,6 +73,17 @@ export const projects: ProjectDataProps[] = [
         tags: ["FreeRTOS", "C", "Embedded Systems", "CAN Bus", "I2C", "SPI", "UART", "VESC Tool", "ESP-IDF", "CMake"],
         logo: rcLogo,
         images: [rc1]
+    },
+    {
+        title: "Smart Mirror",
+        summary: "Personalized mirror with real time weather data",
+        description: "A mirror that is built off the MagicMirror module for the Raspberry Pi. It displays news, weather, and time/date accurate to your location. There is also an OpenCV face detection algorithm that checks if you are in the frame, and if so (and your calendar is linked in config.js) it will display your calendar as long as you are in front of the mirror. Additionally, data is read from a BME280 weather sensor over UART/I2C to provide real-time temperature/humidity data of the room.",
+        date: "February 2025",
+        link: "",
+        repoLink: "https://github.com/harmanshienh/MMM-Sensor",
+        tags: ["Raspberry Pi", "ESP-IDF", "I2C", "UART", "Debian", "OpenCV"],
+        logo: smartMirrorLogo,
+        images: [smartMirror1, smartMirror2]
     },
     {
         title: "Songifind",

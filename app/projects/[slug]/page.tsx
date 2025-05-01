@@ -69,53 +69,59 @@ export default function page({ params }: { params: { slug: string } }) {
           </BreadcrumbList>
         </Breadcrumb>
         <Animation>
-        <div className='flex flex-wrap items-start justify-between gap-2'>
-          <div className='flex flex-wrap items-start gap-2'>
-            <div className='flex items-start gap-2'>
-              <Link href={link} target='_blank' className='text-3xl hover:cursor-pointer hover:underline text-foreground'>
-                {title}
-              </Link>
-              <Link href={repoLink} target='_blank' className='mt-1'>
-                <SiGithub className='text-3xl text-foreground' />
-              </Link>
+          <div className='flex flex-wrap items-start justify-between gap-2'>
+            <div className='flex flex-wrap items-start gap-2'>
+              <div className='flex items-start gap-2'>
+                {link != "" ? (
+                  <Link href={link} target='_blank' className='text-3xl hover:cursor-pointer hover:underline text-foreground'>
+                    {title}
+                  </Link>
+                ) : (
+                  <span className='text-3xl text-foreground'>
+                    {title}
+                  </span>
+                )}
+                <Link href={repoLink} target='_blank' className='mt-1'>
+                  <SiGithub className='text-3xl text-foreground' />
+                </Link>
+              </div>
             </div>
+            <span className='text-xl text-foreground'>
+              {date}
+            </span>
           </div>
-          <span className='text-xl text-foreground'>
-            {date}
-          </span>
-        </div>
         </Animation>
         <Animation>
-        <div className='flex flex-wrap gap-2'>
-          <Animation direction='X'>
-          {tags && tags.map((tag, index) => (
-            <Badge key={index} variant="destructive" className='text-md'>{tag}</Badge>
-          ))}
-          </Animation>
-        </div>
+          <div className='flex flex-wrap gap-2'>
+            <Animation direction='X'>
+              {tags && tags.map((tag, index) => (
+                <Badge key={index} variant="destructive" className='text-md'>{tag}</Badge>
+              ))}
+            </Animation>
+          </div>
         </Animation>
         <Animation initialDelay={400}>
-        <p className='text-md text-muted-foreground'>
-          {description}
-        </p>
+          <p className='text-md text-muted-foreground'>
+            {description}
+          </p>
         </Animation>
         <Animation initialDelay={800}>
-        <Carousel>
-          <CarouselContent>
-            {images.map((image, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  key={index}
-                  src={image}
-                  alt={title}
-                  quality={100}
-                  className='mx-auto rounded-lg max-h-96 w-auto' />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className='hidden lg:flex' />
-          <CarouselNext className='hidden lg:flex' />
-        </Carousel>
+          <Carousel>
+            <CarouselContent>
+              {images.map((image, index) => (
+                <CarouselItem key={index}>
+                  <Image
+                    key={index}
+                    src={image}
+                    alt={title}
+                    quality={100}
+                    className='mx-auto rounded-lg max-h-96 w-auto' />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className='hidden lg:flex' />
+            <CarouselNext className='hidden lg:flex' />
+          </Carousel>
         </Animation>
       </div>
     </section>
