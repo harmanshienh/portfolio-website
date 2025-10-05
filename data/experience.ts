@@ -3,7 +3,8 @@ import occLogo from "../public/logos/occ-logo.jpg"
 import electriumLogo from "../public/logos/electrium-logo.jpg"
 import midSunLogo from "../public/logos/midsun-logo.jpg"
 import wargLogo from "../public/logos/warg-logo.jpg"
-
+import watoLogo from "../public/logos/wato-logo.jpg"
+import huaweiLogo from "../public/logos/huawei-logo.jpg"
 
 export interface ExperienceDataProps {
     company: string;
@@ -16,11 +17,19 @@ export interface ExperienceDataProps {
 
 export const experience: ExperienceDataProps[] = [
     {
-        company: "Electrium Mobility",
-        jobTitle: "Project Lead",
-        summary: "Leading over 25 members to build a fully functioning E-bike conversion kit and a universal remote control. Check them out in the projects section!",
-        startDate: "January 2025",
+        company: "Huawei Canada",
+        jobTitle: "Software Engineer Intern",
+        summary: "Developing and optimizing various aspects of the kernel for a real-time operating system.",
+        startDate: "September 2025",
         endDate: "Present",
+        logo: huaweiLogo
+    },
+    {
+        company: "Electrium Mobility",
+        jobTitle: "Firmware Lead",
+        summary: "Led over 25 members to build a fully functioning E-bike conversion kit and a universal remote control. Check them out in the projects section!",
+        startDate: "January 2025",
+        endDate: "August 2025",
         logo: electriumLogo
     },
     {
@@ -30,6 +39,14 @@ export const experience: ExperienceDataProps[] = [
         startDate: "January 2025",
         endDate: "Present",
         logo: wargLogo
+    },
+    {
+        company: "WATonomous",
+        jobTitle: "Embedded Software Engineer",
+        summary: "Driving accelerator/brake commands on an autonomous car using CAN.",
+        startDate: "September 2024",
+        endDate: "Present",
+        logo: watoLogo
     },
     {
         company: "Waterloo Midnight Sun",
