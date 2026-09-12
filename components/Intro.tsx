@@ -10,12 +10,14 @@ export default function Intro() {
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='font-bold text-4xl sm:text-5xl no-underline text-foreground'>Hi, I&#39;m Harman!</h1>
         <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-          I&#39;m an aspiring Software Engineer, currently studying
+          I&#39;m an aspiring Software Engineer currently studying
           Computer Engineering at the University of Waterloo.
         </p>
         <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>
-          My interests are in Embedded systems and Firmware. I&#39;ve worked primarily 
-          with serial communication and wireless technologies.
+          I&#39;ve worked on embedded software, OS performance, and 
+          camera software, with a focus on making complex systems more efficient. 
+          Currently, I&#39;m exploring systems performance, 
+          computer architecture, GPU programming, and ML systems.
         </p>
         <div className="flex w-full flex-col sm:flex-row gap-3">
           <p className='mt-3 font-light text-lg sm:text-3xl text-muted-foreground'>

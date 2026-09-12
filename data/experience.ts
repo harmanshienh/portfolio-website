@@ -5,6 +5,7 @@ import midSunLogo from "../public/logos/midsun-logo.jpg"
 import wargLogo from "../public/logos/warg-logo.jpg"
 import watoLogo from "../public/logos/wato-logo.jpg"
 import huaweiLogo from "../public/logos/huawei-logo.jpg"
+import metalenzLogo from "../public/logos/metalenz-logo.jpg"
 
 export interface ExperienceDataProps {
     company: string;
@@ -17,11 +18,19 @@ export interface ExperienceDataProps {
 
 export const experience: ExperienceDataProps[] = [
     {
+        company: "Metalenz",
+        jobTitle: "Embedded Software Engineer Intern",
+        summary: "Sped up the image processing for the world's first consumer-scale polarization imaging system.",
+        startDate: "May 2026",
+        endDate: "August 2026",
+        logo: metalenzLogo
+    },
+    {
         company: "Huawei Canada",
-        jobTitle: "Software Engineer Intern",
-        summary: "Developing and optimizing various aspects of the kernel for a real-time operating system.",
+        jobTitle: "Kernel Software Engineer Intern",
+        summary: "Optimized various aspects of the kernel for a real-time operating system.",
         startDate: "September 2025",
-        endDate: "Present",
+        endDate: "December 2025",
         logo: huaweiLogo
     },
     {
@@ -37,7 +46,7 @@ export const experience: ExperienceDataProps[] = [
         jobTitle: "Embedded Flight Software Developer",
         summary: "Working with Mavlink to process telemetry data for the Zeropilot 3.5 architecture on an STM32 microcontroller.",
         startDate: "January 2025",
-        endDate: "Present",
+        endDate: "August 2025",
         logo: wargLogo
     },
     {
@@ -45,7 +54,7 @@ export const experience: ExperienceDataProps[] = [
         jobTitle: "Embedded Software Engineer",
         summary: "Driving accelerator/brake commands on an autonomous car using CAN.",
         startDate: "September 2024",
-        endDate: "Present",
+        endDate: "August 2025",
         logo: watoLogo
     },
     {
